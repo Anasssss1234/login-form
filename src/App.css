@@ -2,74 +2,75 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #28282B;
+  font-family: Arial, sans-serif;
 }
-.background{
-  background-color:#28282B;
+.container{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: #0C67A0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  
+ 
 }
-.background .container{
+.container .form-container{
   width: 300px;
-  height: 320px;
-  background-color:#FFFF;
-  border-radius: 7px;
-  box-shadow: #28282B 0px 8px 24px;;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: #ffff;
 }
-.background .container .head{
-  text-align: center;
+.form-toggle{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.background .container .head h2{
-  margin-block: 15px;
+.form-toggle button{
+  padding: 10px;
+  width: 50%;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px 10px 0px 0px;
 }
-.background .container .input{
+.form-toggle .active{
+  background-color: #033452;
+  color:#ffff;
+}
+.form{
   display: flex;
   flex-direction: column;
-  padding: 9px 15px;
-  color: white;
-  width: 240px;
-  margin-left: 25px;
-  margin-top: 10px;
-  border-radius: 6px;
 }
-.background .container .input input{
-padding: 8px 8px;
-border-radius: 6px;
-margin-top: 10px;
-border: 1px solid #353935;
+.form h2{
+  margin-bottom: 20px;
 }
-.btn{
+.form a{
+  text-align: right;
+}
+.form input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius:5px;
+
+}
+.form a{
+  color:#007bff;
+  text-decoration:none;
+  margin-bottom:10px;
+  text-align:right;
+}
+.form button{
+  padding: 10px;
+  background-color: #033452;
+  color: #ffff;
+  border: none;
+  border-bottom: 5px;
+  cursor: pointer;
+  border-radius:5px ;
+}
+.form p{
   text-align: center;
   margin-top: 20px;
 }
-button{
-  padding: 9px 85px;
-  margin-right: 7px;
-  border: none;
-  outline: none;
-  background-color: #0036B1;
-  color: #ffff;
-  border-radius: 5px;
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-}
-button:hover{
-  background-color: #00339A;
-}
-.background .list{
-  margin-top: 20px;
-  padding: 6px 0px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #ffff;
-  width: 320px;
-}
-
-
-
-
